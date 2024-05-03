@@ -15,12 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-
+from posts import views
 from apis import urls as chatbot_url
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
-    path('', admin.site.urls),
+    path('', views.home),
+    path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('chatbot/', include(chatbot_url)),
 ]
