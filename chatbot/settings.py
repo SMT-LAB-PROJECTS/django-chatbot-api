@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'xcjnssqgl$!5=v$nf9n@d@&%!6z)s)gj0a&&s3($(tgex9@tg4'
+SECRET_KEY = '-hesw21(b@q*mm-h=@0+eac(=oxnxa#a+j8xm+4ta^=$ub4)e-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     "questions",
     "answers",
     "posts",
+    "apis",
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -84,6 +86,19 @@ DATABASES = {
     }
 }
 
+""" DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'esic_chatbot',
+        'USER': 'esic_chatbot',
+        'PASSWORD': 'esic_chatbot',
+        'HOST':'localhost',
+        'PORT':'3306',
+        #'OPTIONS': {  
+            #'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+       # }
+    }
+} """
 
 DEFAULT_AUTO_FIELD='django.db.models.AutoField'
 

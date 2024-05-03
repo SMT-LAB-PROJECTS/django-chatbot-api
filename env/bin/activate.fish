@@ -30,7 +30,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Applications/MAMP/htdocs/python/django/rest-apis/esic_chatbot/env"
+set -gx VIRTUAL_ENV "/Applications/MAMP/htdocs/python/django/rest-apis/chatbot/env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
