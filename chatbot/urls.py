@@ -19,7 +19,8 @@ from django.urls import include, path
 from apis import urls as chatbot_url
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
+    path('', admin.site.urls),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('chatbot/', include(chatbot_url)),
 ]
